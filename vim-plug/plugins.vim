@@ -27,6 +27,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/gv.vim'
     " CoC
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " floatem terminal
+    Plug 'voldikss/vim-floaterm'
 
 
 
