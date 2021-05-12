@@ -35,7 +35,7 @@ let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 
 " s is for search
-let g:which_key_map.s = {
+let g:which_key_map.i = {
       \ 'name' : '+search' ,
       \ '/' : [':History/'     , 'history'],
       \ ';' : [':Commands'     , 'commands'],
