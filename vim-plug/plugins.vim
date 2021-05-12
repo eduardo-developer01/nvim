@@ -25,6 +25,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
+    " CoC
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 
 
 call plug#end()
