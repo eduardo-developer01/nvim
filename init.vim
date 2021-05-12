@@ -22,6 +22,8 @@ set scrolloff=999
 
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
+nnoremap <A-h> :NERDTreeToggle<CR>
 
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/keys/which-key.vim
+source $HOME/.config/nvim/plug-config/coc.vim
