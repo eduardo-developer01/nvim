@@ -18,6 +18,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " theme
     Plug 'nanotech/jellybeans.vim'
     Plug 'christianchiarulli/nvcode-color-schemes.vim'
+    Plug 'cocopon/iceberg.vim'
     " Auto close
     Plug 'vim-scripts/HTML-AutoCloseTag'
     " Git

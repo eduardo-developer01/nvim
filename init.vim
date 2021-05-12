@@ -20,6 +20,9 @@ retab!
 
 set scrolloff=999
 
+" set colorscheme iceberg
+colorscheme iceberg
+
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
 nnoremap <A-h> :NERDTreeToggle<CR>
