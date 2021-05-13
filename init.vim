@@ -28,6 +28,11 @@ nnoremap <A-k> :m .-2<CR>==
 nnoremap <A-h> :NERDTreeToggle<CR>
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
+nnoremap tn :tabnew<Space><CR>
+nnoremap tk :tabnext<Space><CR> 
+nnoremap tj :tablast<Space><CR> 
+nnoremap tt :terminal<Space><CR> 
+
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/keys/which-key.vim
 source $HOME/.config/nvim/plug-config/coc.vim
