@@ -37,7 +37,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'prettier/vim-prettier', {
       \ 'do': 'yarn install',
       \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-
+    " color fro modes 'inset' 'comand' 'visual'
+     Plug 'itchyny/lightline.vim'
+     " open terminal in bottom
+     Plug 'vimlab/split-term.vim'
 
 
 call plug#end()

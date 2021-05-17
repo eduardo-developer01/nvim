@@ -27,12 +27,11 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 let g:which_key_map['w'] = [ ':w!'  , 'Save' ]
 let g:which_key_map['q'] = [ ':q!'  , 'Exit' ]
 let g:which_key_map['x'] = [ ':x!'  , 'Exit & Save' ]
-let g:which_key_map['j'] = [ ':NERDTreeToggle'  , 'NERDtree' ]
+let g:which_key_map['n'] = [ ':NERDTreeToggle'  , 'NERDtree' ]
 let g:which_key_map['p'] = [ ':Prettier'  , 'Prettier' ]
 let g:which_key_map['u'] = [ ':NERDTreeRefreshRoot'  , 'NERDtree refersh' ]
 let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
-let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 
 " s is for search
 let g:which_key_map.i = {
