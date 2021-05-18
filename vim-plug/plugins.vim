@@ -41,6 +41,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
      Plug 'itchyny/lightline.vim'
      " open terminal in bottom
      Plug 'vimlab/split-term.vim'
+     " Ranger
+     Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+     " Cursolines 
+     Plug 'yamatsum/nvim-cursorline '
+     " Icons for vim
+     Plug 'ryanoasis/vim-devicons'
 
 
 call plug#end()

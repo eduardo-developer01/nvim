@@ -16,6 +16,7 @@ set guicursor=
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set virtualedit=all
 retab!
 
 if exists('+colorcolumn')
@@ -26,11 +27,12 @@ if exists('+colorcolumn')
     
 " set scrolloff=999
 
-" set colorscheme iceberg
 colorscheme iceberg
 
-nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
+let NERDTreeWinSize = 20
+
+nnoremap <A-C-j> :m .+1<CR>==
+nnoremap <A-C-k> :m .-2<CR>==
 
 nnoremap <F5> :wa \| vertical botright term ++kill=term<CR>
 
@@ -42,3 +44,4 @@ source $HOME/.config/nvim/keys/which-key.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
+source $HOME/.config/nvim/plug-config/rnvimr.vim
