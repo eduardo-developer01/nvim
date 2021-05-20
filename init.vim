@@ -8,7 +8,7 @@ set tabstop=2
 set noswapfile
 set timeoutlen=500
 set background=dark
-set cursorline
+"set cursorline
 set encoding=UTF-8
 set notimeout
 set guicursor=
@@ -24,12 +24,13 @@ if exists('+colorcolumn')
   else
       au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
     endif
-    
+
+set termguicolors
+colorscheme gruvbit
 " set scrolloff=999
 
-colorscheme iceberg
 
-let NERDTreeWinSize = 20
+" let NERDTreeWinSize = 20
 
 nnoremap <A-C-j> :m .+1<CR>==
 nnoremap <A-C-k> :m .-2<CR>==
@@ -45,3 +46,4 @@ source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
+"luafile $HOME/.config/nvim/lua/plug-colorizer.lua

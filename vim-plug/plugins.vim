@@ -19,6 +19,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nanotech/jellybeans.vim'
     Plug 'christianchiarulli/nvcode-color-schemes.vim'
     Plug 'cocopon/iceberg.vim'
+    Plug 'wojciechkepka/vim-github-dark'
+    Plug 'habamax/vim-gruvbit'
     " Auto close
     Plug 'vim-scripts/HTML-AutoCloseTag'
     " Git
@@ -38,15 +40,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
       \ 'do': 'yarn install',
       \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
     " color fro modes 'inset' 'comand' 'visual'
-     Plug 'itchyny/lightline.vim'
-     " open terminal in bottom
-     Plug 'vimlab/split-term.vim'
+    Plug 'vim-airline/vim-airline'
      " Ranger
      Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
-     " Cursolines 
-     Plug 'yamatsum/nvim-cursorline '
      " Icons for vim
      Plug 'ryanoasis/vim-devicons'
-
+     " Adding color with colorizer & rainbow
+     Plug 'norcalli/nvim-colorizer.lua' 
+     " developer web auto html css js
+     Plug 'turbio/bracey.vim'
+     " developer web suggest tag
+     Plug 'mattn/emmet-vim'
 
 call plug#end()
