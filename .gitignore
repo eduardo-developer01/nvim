@@ -1,2 +1,5 @@
 # Plugins
 autoload/plugged
+
+tags
+.netrwhist
