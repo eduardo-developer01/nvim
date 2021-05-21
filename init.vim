@@ -7,11 +7,11 @@ set noswapfile
 set timeoutlen=500
 set encoding=UTF-8
 set notimeout
-set guicursor=
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set virtualedit=all
+set guicursor= " cursor block forever
 
 " set cursorline " line in cursor
 " set relativenumber
@@ -35,7 +35,7 @@ set termguicolors
 set background=dark
 syntax enable
 set t_Co=256
-hi Normal guibg=NONE ctermbg=NONE
+" hi Normal guibg=NONE ctermbg=NONE " background traspirety
 
 " ------------------------------ Configs Plugins
 " -------------------- Emmet HTML CSS sets
@@ -46,7 +46,11 @@ autocmd FileType html,css EmmetInstall
 nnoremap <leader>8 :Bracey <CR>
 nnoremap <leader><F9> :BraceyReload <CR>
 nnoremap <leader>8 :BraceyStop <CR>
-autocmd FileType html Bracey
+" autocmd FileType html Bracey
+
+" -------------------- Vim-maximizer
+nnoremap <leader>z :MaximizerToggle <CR> 
+
 " ------------------------------ Source Plugins
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/keys/which-key.vim
