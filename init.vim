@@ -31,6 +31,7 @@ if exists('+colorcolumn')
 
 " ------------------------------ Themes configs
 colorscheme gruvbit
+let g:airline_theme='base16_monokai'
 set termguicolors
 set background=dark
 syntax enable
@@ -38,6 +39,7 @@ set t_Co=256
 " hi Normal guibg=NONE ctermbg=NONE " background traspirety
 
 " ------------------------------ Configs Plugins
+
 " -------------------- Emmet HTML CSS sets
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
@@ -50,6 +52,12 @@ nnoremap <leader>8 :BraceyStop <CR>
 
 " -------------------- Vim-maximizer
 nnoremap <leader>z :MaximizerToggle <CR> 
+
+" --------------------- buffers
+nnoremap <A-.> :bn<CR> 
+nnoremap <A-,> :bp<CR>
+nnoremap <A-x> :bd<CR>
+set hidden
 
 " ------------------------------ Source Plugins
 source $HOME/.config/nvim/vim-plug/plugins.vim
