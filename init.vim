@@ -1,4 +1,4 @@
-" Configs for my neoVim
+" ------------------------------ Configs for my neoVim
 set number " Number in vim
 set showmode
 set ruler
@@ -18,7 +18,7 @@ set virtualedit=all
 " set scrolloff=999
 retab!
 
-" move line
+" ------------------------------ move line
 nnoremap <A-C-j> :m .+1<CR>==
 nnoremap <A-C-k> :m .-2<CR>==
 
@@ -29,14 +29,25 @@ if exists('+colorcolumn')
       au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
     endif
 
-" Themes configs
+" ------------------------------ Themes configs
 colorscheme gruvbit
 set termguicolors
 set background=dark
 syntax enable
 set t_Co=256
+hi Normal guibg=NONE ctermbg=NONE
 
-" Configs Plugins
+" ------------------------------ Configs Plugins
+" -------------------- Emmet HTML CSS sets
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
+" -------------------- Emmet HTML CSS sets
+nnoremap <leader>8 :Bracey <CR>
+nnoremap <leader><F9> :BraceyReload <CR>
+nnoremap <leader>8 :BraceyStop <CR>
+autocmd FileType html Bracey
+" ------------------------------ Source Plugins
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/keys/which-key.vim
 source $HOME/.config/nvim/plug-config/coc.vim
