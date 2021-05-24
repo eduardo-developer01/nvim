@@ -77,5 +77,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
      " ---------- buffers
      Plug 'https://github.com/ap/vim-buftabline'
 
+     " ---------- AutoSave
+     Plug 'https://github.com/907th/vim-auto-save'
+
 call plug#end()
 

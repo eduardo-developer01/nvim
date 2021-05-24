@@ -62,6 +62,9 @@ nnoremap <A-i> :bp<CR>
 nnoremap <A-u> :bd<CR>
 set hidden
 
+" --------------------- AutoSave 
+let g:auto_save = 1  " enable AutoSave 
+
 " ------------------------------ Source Plugins
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/keys/which-key.vim
