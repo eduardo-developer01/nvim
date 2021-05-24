@@ -19,6 +19,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'cocopon/iceberg.vim'
     Plug 'wojciechkepka/vim-github-dark'
     Plug 'habamax/vim-gruvbit'
+    Plug 'https://github.com/sainnhe/sonokai'
 
     " ----------  Auto close 
     Plug 'vim-scripts/HTML-AutoCloseTag'
