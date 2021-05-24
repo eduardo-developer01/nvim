@@ -55,6 +55,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
      " ---------- Adding color with colorizer & rainbow
      Plug 'norcalli/nvim-colorizer.lua' 
+     Plug 'https://github.com/kien/rainbow_parentheses.vim'
 
      " ---------- developer web auto html css js
      Plug 'turbio/bracey.vim'
