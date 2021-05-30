@@ -4,7 +4,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
 
     " ---------- File Explorer ----------
-    Plug 'scrooloose/NERDTree'
+    "Plug 'scrooloose/NERDTree'
 
     " ----------  Auto pairs for '(' '[' '{' ----------
     Plug 'jiangmiao/auto-pairs'
@@ -14,11 +14,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " ----------  theme ----------
     Plug 'https://github.com/rafi/awesome-vim-colorschemes'
-    Plug 'nanotech/jellybeans.vim'
-    Plug 'christianchiarulli/nvcode-color-schemes.vim'
-    Plug 'cocopon/iceberg.vim'
-    Plug 'wojciechkepka/vim-github-dark'
-    Plug 'habamax/vim-gruvbit'
     Plug 'https://github.com/sainnhe/sonokai'
 
     " ----------  Auto close 
@@ -28,7 +23,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-signify'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
-    Plug 'junegunn/gv.vim'
+    "Plug 'junegunn/gv.vim'
 
     " ----------  CoC 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -40,15 +35,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
-    Plug 'prettier/vim-prettier', {
-      \ 'do': 'yarn install',
-      \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-    " color fro modes 'inset' 'comand' 'visual'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
 
      " ---------- Ranger 
-     Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+     "Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
      " ---------- Icons for vim 
      Plug 'ryanoasis/vim-devicons'
@@ -67,16 +56,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
      Plug 'szw/vim-maximizer'                    
 
      " ---------- plug for debug
-     " Plug 'puremourning/vimspector'                    
+     "Plug 'puremourning/vimspector'                    
 
      " ---------- vim startify 
      Plug 'mhinz/vim-startify'
 
-     " ---------- indent Line
-     Plug 'https://github.com/Yggdroot/indentLine'
-
      " ---------- buffers
-     Plug 'https://github.com/ap/vim-buftabline'
+     "Plug 'https://github.com/ap/vim-buftabline'
 
      " ---------- AutoSave
      Plug 'https://github.com/907th/vim-auto-save'

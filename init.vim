@@ -1,29 +1,29 @@
 " ------------------------------ Configs for my neoVim
-set number " Number in vim
 set showmode
 set ruler
-set tabstop=2
+set tabstop=4
 set noswapfile
 set timeoutlen=500
 set encoding=UTF-8
 set notimeout
-set tabstop=2
-set shiftwidth=2
+set shiftwidth=4
 set expandtab
 set virtualedit=all
 set guicursor= " cursor block forever
 set nowrap
-
-" set cursorline " line in cursor
-" set relativenumber
-" set scrolloff=999
 retab!
 
-" ------------------------------ move line
+" set scrolloff=999 " curso center
+
+" ------------------------------  shortcuts
+
+nnoremap <A-C-m> :noh<CR>
+
+" -------------------- move line
 nnoremap <A-C-j> :m .+1<CR>==
 nnoremap <A-C-k> :m .-2<CR>==
 
-" column in 80
+" -------------------- column in 80
 if exists('+colorcolumn')
     set colorcolumn=80
   else
@@ -31,39 +31,34 @@ if exists('+colorcolumn')
     endif
 
 " ------------------------------ Themes configs
-colorscheme iceberg
-let g:airline_theme='base16_monokai'
+colorscheme ayu
+" let g:airline_theme='base16_monokai'
 set termguicolors
 set background=dark
 syntax enable
 set t_Co=256
-"hi Normal guibg=NONE ctermbg=NONE " background traspirety
+" hi Normal guibg=NONE ctermbg=NONE " background traspirety
 
 " ------------------------------ Configs Plugins
 
+" -------------------- Prettier formatter for coc.nvim
+" command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
 " -------------------- Emmet HTML CSS sets
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+autocmd FileType html,css,javascript EmmetInstall
 let g:user_emmet_leader_key='<leader>z'
 
 
-" -------------------- Emmet HTML CSS sets
+" -------------------- Bracey
 nnoremap <leader>1 :Bracey<CR>
-nnoremap <leader><F9> :BraceyReload<CR>
-nnoremap <leader>8 :BraceyStop <CR>
-" autocmd FileType html Bracey
 
 " -------------------- Vim-maximizer
 nnoremap <A-m> :MaximizerToggle <CR> 
 
-" --------------------- buffers
-nnoremap <A-o> :bn<CR> 
-nnoremap <A-i> :bp<CR>
-nnoremap <A-u> :bd<CR>
-set hidden
-
 " --------------------- AutoSave 
 let g:auto_save = 1  " enable AutoSave 
+let g:auto_save_silent = 1 
 
 " ------------------------------ Source Plugins
 source $HOME/.config/nvim/vim-plug/plugins.vim
@@ -75,3 +70,13 @@ source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+
+" hinde start line im bottom
+
+set noshowmode
+set noruler
+set laststatus=0
+set noshowcmd
+set cmdheight=1
+
+set signcolumn=no
