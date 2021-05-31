@@ -9,11 +9,9 @@ set notimeout
 set shiftwidth=4
 set expandtab
 set virtualedit=all
-set guicursor= " cursor block forever
+set guicursor=
 set nowrap
 retab!
-
-" set scrolloff=999 " curso center
 
 " ------------------------------  shortcuts
 
@@ -32,17 +30,15 @@ if exists('+colorcolumn')
 
 " ------------------------------ Themes configs
 colorscheme ayu
-" let g:airline_theme='base16_monokai'
 set termguicolors
 set background=dark
 syntax enable
 set t_Co=256
-" hi Normal guibg=NONE ctermbg=NONE " background traspirety
 
 " ------------------------------ Configs Plugins
 
 " -------------------- Prettier formatter for coc.nvim
-" command! -nargs=0 Prettier :CocCommand prettier.formatFile
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " -------------------- Emmet HTML CSS sets
 let g:user_emmet_install_global = 0
@@ -57,7 +53,7 @@ nnoremap <leader>1 :Bracey<CR>
 nnoremap <A-m> :MaximizerToggle <CR> 
 
 " --------------------- AutoSave 
-let g:auto_save = 1  " enable AutoSave 
+let g:auto_save = 1 
 let g:auto_save_silent = 1 
 
 " ------------------------------ Source Plugins
@@ -72,11 +68,10 @@ source $HOME/.config/nvim/plug-config/rainbow.vim
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
 " hinde start line im bottom
-
 set noshowmode
 set noruler
 set laststatus=0
 set noshowcmd
 set cmdheight=1
-
 set signcolumn=no
+
