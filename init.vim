@@ -1,4 +1,6 @@
 " ------------------------------ Configs for my neoVim
+syntax enable
+set number
 set showmode
 set ruler
 set tabstop=4
@@ -16,6 +18,9 @@ retab!
 " ------------------------------  shortcuts
 
 nnoremap <A-C-m> :noh<CR>
+nnoremap <A-e> :Ex<CR>
+
+nnoremap <A-[> :Prettier<CR>
 
 " -------------------- move line
 nnoremap <A-C-j> :m .+1<CR>==
@@ -29,28 +34,23 @@ if exists('+colorcolumn')
     endif
 
 " ------------------------------ Themes configs
-colorscheme ayu
+colorscheme quantum
 set termguicolors
 set background=dark
-syntax enable
 set t_Co=256
+hi Normal guibg=NONE ctermbg=NONE
 
 " ------------------------------ Configs Plugins
+
+autocmd FileType scss setl iskeyword+=@-@
 
 " -------------------- Prettier formatter for coc.nvim
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " -------------------- Emmet HTML CSS sets
 let g:user_emmet_install_global = 0
-autocmd FileType html,css,javascript EmmetInstall
+autocmd FileType html,css,javascript,javascript.jsx EmmetInstall
 let g:user_emmet_leader_key='<leader>z'
-
-
-" -------------------- Bracey
-nnoremap <leader>1 :Bracey<CR>
-
-" -------------------- Vim-maximizer
-nnoremap <A-m> :MaximizerToggle <CR> 
 
 " --------------------- AutoSave 
 let g:auto_save = 1 
@@ -65,6 +65,7 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
+source $HOME/.config/nvim/plug-config/vimspector.vim
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
 " hinde start line im bottom
